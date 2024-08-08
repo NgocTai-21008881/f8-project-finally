@@ -17,6 +17,7 @@
     }
 
     @include abtracts.breakpoint(sm) {
+        justify-content: space-between;
         padding: 16px 0;
     }
 
@@ -26,6 +27,10 @@
         @include abtracts.breakpoint(lg) {
             display: block;
         }
+    }
+
+    &__more__icon {
+        margin-top: 7px;
     }
 }
 
@@ -63,6 +68,10 @@
     @extend %flexitemCenter;
     gap: 20px;
     margin-left: auto;
+
+    @include abtracts.breakpoint(sm) {
+        margin-left: 0;
+    }
     &__group {
         @extend %flexitemCenter;
         min-width: 50px;

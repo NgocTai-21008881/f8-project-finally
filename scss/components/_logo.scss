@@ -6,7 +6,11 @@
 
     @include abtracts.breakpoint(lg) {
         gap: 10px;
-        margin-left: 39px;
+        margin-left: 40px;
+    }
+
+    @include abtracts.breakpoint(sm) {
+        margin-left: 0;
     }
 
     &__title {
